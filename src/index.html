@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
+
     /*selector de etiqueta que aplica una regla de stilo para todas las etiquetas p*/
     p {
         color: blue;
@@ -8,8 +9,25 @@
 
     /*selector de etiqueta que aplica una regla de stilo para todas las etiquetas */
     * {
-        color: aqua;
+        margin: 0;
 
+    }
+
+    /*pseudo clase que aplica propiedades de estilo al primer parrafo, es este caso a "hola parrafo y Raton" */
+    p:first-child {
+        color: blueviolet;
+    }
+
+    /*pseudo clase que aplica propiedades de estilo a todos los parrafos pares*/
+    p:nth-child(2n) {
+        font-size: 70px;
+    }
+
+    /*pseudo elemento que aplica reglas de estilo a la primera letra de todos los parrafos*/
+    p::first-letter{
+        color: chocolate;
+        font-size: xx-large;
+        font-family: "Comic Sans MS",serif;
     }
 
 
@@ -18,6 +36,13 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <p>Hola parrafo</p>
+
+    <div>
+        <p>Raton 🐭</p>
+        <p>Zorro 🦊</p>
+        <p>Vaca 🐮</p>
+        <p>Mono 🐵</p>
+    </div>
 </head>
 <body>
 
