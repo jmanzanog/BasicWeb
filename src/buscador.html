@@ -70,8 +70,36 @@
         margin: 0;
         color: white;
     }
+
+    .main {
+        height: 300px;
+    }
+
+    .main__title {
+        color: white;
+        font-size: 25px;
+    }
+
+    .input {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid white;
+        border-radius: 50px;
+        color: white;
+        background-color: #f38181;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        height: 50px;
+        padding: 0 20px;
+        width: 70%;
+        outline: none;
+    }
+
+    ::placeholder {
+        color: white;
+    }
 </style>
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Header Con logo</title>
 </head>
@@ -92,8 +120,11 @@
             </li>
         </ul>
     </div>
-
 </header>
+<section class="main">
+    <h2 class="main__title">What do you want to see today?</h2>
+    <input class="input" placeholder="Buscar.."/>
+</section>
 
 </body>
 </html>
